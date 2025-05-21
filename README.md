@@ -1,7 +1,4 @@
 # React-JS-Tutorial
-
-Great! Let's learn **React JS** step by step, in a clear and simple way, using only the topics you've listed. I’ll define and explain each topic with basic examples, avoiding anything we haven’t covered yet.
-
 ---
 
 ## ✅ **React JS**
