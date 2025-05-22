@@ -1,35 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import UserProfile from "./components/UserProfile";
 
-function App() {
-  const [count, setCount] = useState(0)
+import "./App.css";
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+const userDetailsList = [
+  {
+    uniqueNo: 1,
+    imageUrl: "https://assets.ccbp.in/frontend/react-js/esther-howard-img.png",
+    name: "Esther Howard",
+    role: "Software Developer",
+  },
+  {
+    uniqueNo: 2,
+    imageUrl: "https://assets.ccbp.in/frontend/react-js/floyd-miles-img.png",
+    name: "Floyd Miles",
+    role: "Software Developer",
+  },
+  {
+    uniqueNo: 3,
+    imageUrl: "https://assets.ccbp.in/frontend/react-js/jacob-jones-img.png",
+    name: "Jacob Jones",
+    role: "Software Developer",
+  },
+  {
+    uniqueNo: 4,
+    imageUrl: "https://assets.ccbp.in/frontend/react-js/devon-lane-img.png",
+    name: "Devon Lane",
+    role: "Software Developer",
+  },
+];
 
-export default App
+const App = () => (
+  <div className="list-container">
+    <h1 className="title">Users List</h1>
+    <ul>
+      {userDetailsList.map((eachItem) => (
+        <UserProfile userDetails={eachItem} key={eachItem.uniqueNo} />
+      ))}
+    </ul>
+  </div>
+);
+
+export default App;

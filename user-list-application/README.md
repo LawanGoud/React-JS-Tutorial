@@ -1,12 +1,89 @@
-# React + Vite
+# Lists and Keys
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Lists
+  - Preparing Data
+  - Rendering lists
+- Keys
+  - Adding Unique Key
+  - Key Attribute
 
-Currently, two official plugins are available:
+To set up a **React** project using **Vite**, follow these steps:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+### ✅ Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Make sure you have the following installed:
+
+- **Node.js** (v14.18+, v16+ recommended)
+  You can check your version by running:
+
+  ```bash
+  node -v
+  ```
+
+---
+
+### ⚙️ Step-by-Step Installation
+
+1. **Create a new project with Vite:**
+
+   ```bash
+   npm create vite@latest my-react-app -- --template react
+   ```
+
+   > Replace `my-react-app` with your desired project name.
+
+2. **Navigate to your project folder:**
+
+   ```bash
+   cd my-react-app
+   ```
+
+3. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+   > You should see something like `Local: http://localhost:5173/`
+
+---
+
+### 📁 Project Structure
+
+Here's a quick look at what you get:
+
+```
+my-react-app/
+├─ public/
+├─ src/
+│  ├─ App.css
+│  ├─ App.jsx
+│  ├─ main.jsx
+├─ index.html
+├─ package.json
+├─ vite.config.js
+```
+
+---
+
+### 🚀 Production Build
+
+When you're ready to build for production:
+
+```bash
+npm run build
+```
+
+This will generate a `dist` folder with optimized static assets.
+
+---
+
+Let me know if you want to add TypeScript, Tailwind CSS, or other tools!
